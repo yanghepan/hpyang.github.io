@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>Typora中MarkDown语法 | hpyang&#39;s Note</title>
+  <meta name="description" content="标题级别123456# 一级标题       command + 1## 二级标题      command + 2### 三级标题     command + 3#### 四级标题    command + 4##### 五级标题   command + 5###### 六级标题  command + 6  引用12&gt; 引用command+option+Q  列表无序列表123456789">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Typora中MarkDown语法">
+<meta property="og:url" content="http://yoursite.com/2020/04/13/Typora%E4%B8%ADMarkDown%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:site_name" content="hpyang&#39;s note">
+<meta property="og:description" content="标题级别123456# 一级标题       command + 1## 二级标题      command + 2### 三级标题     command + 3#### 四级标题    command + 4##### 五级标题   command + 5###### 六级标题  command + 6  引用12&gt; 引用command+option+Q  列表无序列表123456789">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-13T15:22:02.000Z">
+<meta property="article:modified_time" content="2020-04-13T15:31:49.205Z">
+<meta property="article:author" content="hpyang">
+<meta property="article:tag" content="Typora">
+<meta property="article:tag" content="MarkDown">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://yoursite.com/2020/04/13/Typora%E4%B8%ADMarkDown%E8%AF%AD%E6%B3%95/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="hpyang&#39;s note" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/yanghepan" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">hpyang</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Java｜Python Developer &amp; Runner</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> ShangHai, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">项目</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/yanghepan" target="_blank" title="Github" ><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/hpyang" target="_blank" title="Weibo" ><i class="icon icon-weibo"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>吾日三省吾身，见贤思齐焉</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MarkDown/">MarkDown</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/UML/">UML</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDEA/" rel="tag">IDEA</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MarkDown/" rel="tag">MarkDown</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PlantUml/" rel="tag">PlantUml</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Typora/" rel="tag">Typora</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UML/" rel="tag">UML</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/IDEA/" style="font-size: 13px;">IDEA</a> <a href="/tags/MarkDown/" style="font-size: 13px;">MarkDown</a> <a href="/tags/PlantUml/" style="font-size: 13px;">PlantUml</a> <a href="/tags/Typora/" style="font-size: 13px;">Typora</a> <a href="/tags/UML/" style="font-size: 13px;">UML</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/MarkDown/">MarkDown</a>
+              </p>
+              <p class="item-title">
+                <a href="/2020/04/13/Typora%E4%B8%ADMarkDown%E8%AF%AD%E6%B3%95/" class="title">Typora中MarkDown语法</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-04-13T15:22:02.000Z" itemprop="datePublished">2020-04-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/UML/">UML</a>
+              </p>
+              <p class="item-title">
+                <a href="/2020/04/13/Plantuml/" class="title">Plantuml.md</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-04-13T15:14:00.000Z" itemprop="datePublished">2020-04-13</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-Typora中MarkDown语法" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Typora中MarkDown语法
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2020/04/13/Typora%E4%B8%ADMarkDown%E8%AF%AD%E6%B3%95/" class="article-date">
+	  <time datetime="2020-04-13T15:22:02.000Z" itemprop="datePublished">2020-04-13</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/MarkDown/">MarkDown</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/MarkDown/" rel="tag">MarkDown</a>, <a class="article-tag-link" href="/tags/Typora/" rel="tag">Typora</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/04/13/Typora%E4%B8%ADMarkDown%E8%AF%AD%E6%B3%95/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 455(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 2(分)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h2 id="标题级别"><a href="#标题级别" class="headerlink" title="标题级别"></a>标题级别</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题       command + 1</span><br><span class="line">## 二级标题      command + 2</span><br><span class="line">### 三级标题     command + 3</span><br><span class="line">#### 四级标题    command + 4</span><br><span class="line">##### 五级标题   command + 5</span><br><span class="line">###### 六级标题  command + 6</span><br></pre></td></tr></table></figure>
+
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; 引用</span><br><span class="line">command+option+Q</span><br></pre></td></tr></table></figure>
+
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* AAA</span><br><span class="line">* BBB</span><br><span class="line">* CCC</span><br><span class="line"></span><br><span class="line">* 多行列表</span><br><span class="line">TAB * 多行列表</span><br><span class="line">TAB TAB * 多行列表</span><br><span class="line"></span><br><span class="line">command+option+U</span><br></pre></td></tr></table></figure>
+
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1. AAA   </span><br><span class="line">2. BBB</span><br><span class="line">3. CCC</span><br><span class="line"></span><br><span class="line">1. 多行列表</span><br><span class="line">TAB 1. 多行列表</span><br><span class="line">TAB TAB 1. 多行列表</span><br><span class="line"></span><br><span class="line">command+option+O</span><br></pre></td></tr></table></figure>
+
+<h3 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- [ ]抽烟</span><br><span class="line">- [x]喝酒</span><br><span class="line"></span><br><span class="line">command+option+U</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#96; String aaa&#x3D;&quot;typora&quot; &#96; &#x2F;&#x2F;单行代码 </span><br><span class="line">​&#96;&#96;&#96;+ 回车 &#x2F;&#x2F;代码块 command+option+C</span><br><span class="line">\partial</span><br></pre></td></tr></table></figure>
+
+<h2 id="数学表达式"><a href="#数学表达式" class="headerlink" title="数学表达式"></a>数学表达式</h2><h3 id="math"><a href="#math" class="headerlink" title="math"></a>math</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+<p>$$<br>\mathbf{V}_1\times\mathbf{V}_2= \begin{vmatrix}<br>\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\<br>\frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u}&amp; 0\<br>\frac{\partial X}{\partial v}&amp;\frac{\partial Y}{\partial v} &amp; 0\<br>\end{vmatrix}<br>$$</p>
+<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输入$$ + 回车   command+option+B</span><br></pre></td></tr></table></figure>
+
+
+<p>$$<br>P_{u,i}=\frac{\sum_{j}^n(sum{<em>{u,j}})*R</em>{j,i}}{\sum_{j}^nsim_{u,j}}<br>$$</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">|表头1|表头2| + 回车</span><br><span class="line">Command+T</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;mermaid + 回车</span><br><span class="line">graph LR 横向流程图</span><br><span class="line">graph TD 竖向流程图</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[方形] --&gt; B(圆角)</span><br><span class="line">B --&gt; C&#123;ifa&#125;</span><br><span class="line">C --&gt; |a&#x3D;1| D[result1]</span><br><span class="line">C --&gt; |a&#x3D;2| E[result2]</span><br></pre></td></tr></table></figure>
+
+<h3 id="UML时序图"><a href="#UML时序图" class="headerlink" title="UML时序图"></a>UML时序图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">​&#96;&#96;&#96;mermaid</span><br><span class="line">sequenceDiagram + 回车</span><br></pre></td></tr></table></figure>
+
+<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">github](https:&#x2F;&#x2F;github.com&#x2F;)</span><br><span class="line">&lt;https:&#x2F;&#x2F;github.com&#x2F;&gt;</span><br><span class="line">![图片](url,title)</span><br></pre></td></tr></table></figure>
+
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用 *** 和 ---</span><br></pre></td></tr></table></figure>
+
+<h2 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h2><h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">**字体加粗**   command+b</span><br><span class="line">__字体加粗__</span><br><span class="line">*字体倾斜*     command+i</span><br><span class="line">_字体倾斜_</span><br><span class="line">&lt;u&gt;下划线&lt;&#x2F;u&gt;  command+u</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
+
+<h3 id="注脚"><a href="#注脚" class="headerlink" title="注脚"></a>注脚</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">github[^1]</span><br><span class="line">[^1]:https:&#x2F;&#x2F;github.com</span><br></pre></td></tr></table></figure>
+
+<h3 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&amp;copy;     版权</span><br><span class="line">&amp;times;    乘号</span><br><span class="line">&amp;divide;   除号</span><br><span class="line">&amp;plusmn;   加减号</span><br><span class="line">&lt;       小于号</span><br><span class="line">&gt;       大于号</span><br><span class="line">&amp;ne;       不等号</span><br><span class="line">&amp;le;       小于等于</span><br><span class="line">&amp;ge;       大于等于</span><br><span class="line">&amp;nbsp;     空格</span><br><span class="line">&amp;      与</span><br><span class="line">&quot;     双引号</span><br><span class="line">&amp;apos;     单引号</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://yoursite.com/2020/04/13/Typora%E4%B8%ADMarkDown%E8%AF%AD%E6%B3%95/" title="Typora中MarkDown语法" target="_blank" rel="external">http://yoursite.com/2020/04/13/Typora%E4%B8%ADMarkDown%E8%AF%AD%E6%B3%95/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/yanghepan" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/yanghepan" target="_blank"><span class="text-dark">hpyang</span><small class="ml-1x">Java｜Python Developer &amp; Runner</small></a></h3>
+        <div>好记性不如烂笔头</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2020/04/13/Plantuml/" title="Plantuml.md"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/yanghepan" target="_blank" title="Github" ><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/hpyang" target="_blank" title="Weibo" ><i class="icon icon-weibo"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby" style="display:none">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'Cxh9uYLWRzsy4vQ8fDI3CYaO-gzGzoHsz',
+    appKey: '1vWJ1TYVRVOht2jvsxJ3ifUe',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+
+
+
+
+</body>
+</html>
