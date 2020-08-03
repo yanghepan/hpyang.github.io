@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-13T15:31:49.205Z</updated>
+  <updated>2020-08-03T22:58:01.101Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac下Finder和命令行相互切换</title>
+    <link href="http://yoursite.com/2020/08/04/mac-finder-change-to-cmd-md/"/>
+    <id>http://yoursite.com/2020/08/04/mac-finder-change-to-cmd-md/</id>
+    <published>2020-08-03T22:40:16.000Z</published>
+    <updated>2020-08-03T22:58:01.101Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>在mac的使用过程中，你经常会有这样的需求：通过Finder进入了一个很深的路径，需要在那个路径下打开终端，输入一些命令;或者在终端中进入了一个很深的路径，这时候需要用Finder打开这个路径，在Finder里右键属性，查看当前的路径地址，然后打开终端，一层一层的输入，虽然终端的路径补全功能很高级，但是也挡不住目录太深，操作起来非常麻烦和易错。这里推荐一种工具来完成。</p><h2 id=""><a href="#" class="headerlink" title=""></a></h2><h3 id="Finder打开终端"><a href="#Finder打开终端" class="headerlink" title="Finder打开终端"></a>Finder打开终端</h3><p>git地址：<a href="https://github.com/jbtule/cdto.git" target="_blank" rel="noopener">https://github.com/jbtule/cdto.git</a></p><p>可以采用二进制的方式编译，也可以下载zip包。下载解压完以后，找到里面对应你的系统版本，我用的iterm里面的，直接把cd to 拖到Finder顶上的toolbar。</p><p>这里要注意：10.9最新版再拖拽的时候需要按住 cmd+alt键 </p><h2 id="终端打开finder"><a href="#终端打开finder" class="headerlink" title="终端打开finder"></a>终端打开finder</h2><p>最早的时候，笔者都是先在终端里输入pwd,获取并复制当前路径，然后点开Finder,然后command+shift+G,然后把地址粘贴到“Go to the folder”里。后来发现个更科幻的方法,直接在终端里输入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open .</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;在mac的使用过程中，你经常会有这样的需求：通过Finder进入了一个很深的路径，需要在那个路径下打开终端，输入一些命令;或者在终端中进入了
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+    
+    
+      <category term="finder" scheme="http://yoursite.com/tags/finder/"/>
+    
+      <category term="cdto" scheme="http://yoursite.com/tags/cdto/"/>
+    
+  </entry>
   
   <entry>
     <title>Typora中MarkDown语法</title>
